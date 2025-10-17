@@ -13,7 +13,7 @@ export async function searchGoogle(query: string): Promise<SearchResult[]> {
     const apiKey = process.env.GOOGLE_SEARCH_API_KEY;
     const cx = process.env.GOOGLE_CX;
 
-    if (!apiKey || apiKey === "YOUR_API_KEY" || !cx || cx === "YOUR_CX_ID") {
+    if (!apiKey || apiKey === "AIzaSyDlyjo5djwPRxjIPzvIZY6NJTlH6NVmO14" || !cx || cx === "16a8e762315ba45d0") {
         console.error("Google Search API key or CX not configured. Please check your .env.local file.");
         // Return an empty array to prevent crashes, but indicate failure.
         return [];
