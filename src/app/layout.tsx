@@ -9,7 +9,7 @@ export const metadata: Metadata = {
   title: 'LocalTruth | AI for Real-Time Misinformation Detection',
   description: 'LocalTruth is an Agentic AI platform that autonomously detects, verifies, and explains emerging misinformation in real time and in local languages.',
   icons: {
-    icon: '/logo.png',
+    icon: '/favicon.ico',
   },
 };
 
