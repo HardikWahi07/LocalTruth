@@ -10,14 +10,14 @@ type SearchResult = {
 };
   
 export async function searchGoogle(query: string): Promise<SearchResult[]> {
-    const apiKey = process.env.GOOGLE_SEARCH_API_KEY;
-    const cx = process.env.GOOGLE_CX;
+    const apiKey = "AIzaSyDlyjo5djwPRxjIPzvIZY6NJTlH6NVmO14";
+    const cx = "16a8e762315ba45d0";
 
-    if (!apiKey || apiKey === "AIzaSyDlyjo5djwPRxjIPzvIZY6NJTlH6NVmO14" || !cx || cx === "16a8e762315ba45d0") {
+    /*if (!apiKey || apiKey ===  || !cx || cx === ) {
         console.error("Google Search API key or CX not configured. Please check your .env.local file.");
         // Return an empty array to prevent crashes, but indicate failure.
         return [];
-    }
+    }*/
 
     const url = `https://www.googleapis.com/customsearch/v1?key=${apiKey}&cx=${cx}&q=${encodeURIComponent(
         query
